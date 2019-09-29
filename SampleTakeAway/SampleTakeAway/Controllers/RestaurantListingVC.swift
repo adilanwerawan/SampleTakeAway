@@ -36,7 +36,7 @@ class RestaurantListingVC: UIViewController {
         
         self.restaurantsTbl?.tableFooterView = UIView.init(frame: .zero)
         
-        //Airports api call
+        //Restaurant api call
         self.manager.api(requestParam, completion: {
             
             if self.manager.isSuccess {

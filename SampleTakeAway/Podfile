@@ -18,11 +18,25 @@ target 'SampleTakeAway' do
   target 'SampleTakeAwayTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Alamofire', '4.8.2'
+    pod 'SwiftyJSON'
+    pod 'NVActivityIndicatorView'
+    pod 'Kingfisher'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'Cosmos', '~> 19.0'
+    pod 'DropDown'
   end
 
   target 'SampleTakeAwayUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Alamofire', '4.8.2'
+    pod 'SwiftyJSON'
+    pod 'NVActivityIndicatorView'
+    pod 'Kingfisher'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'Cosmos', '~> 19.0'
+    pod 'DropDown'
   end
 
 end

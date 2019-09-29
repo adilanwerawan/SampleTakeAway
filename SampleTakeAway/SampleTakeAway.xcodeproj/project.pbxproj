@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1D74062340C75F00CBEBE8 /* DatabaseAndMoreFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D74052340C75F00CBEBE8 /* DatabaseAndMoreFunctionalityTests.swift */; };
 		6B81913A233F508B002FFE0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B819139233F508B002FFE0F /* AppDelegate.swift */; };
 		6B81913F233F508B002FFE0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B81913D233F508B002FFE0F /* Main.storyboard */; };
 		6B819141233F508F002FFE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B819140233F508F002FFE0F /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		386BAE1BBFF3DB3182246E45 /* Pods_SampleTakeAway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTakeAway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6E1CBDE7F48E05047030D6 /* Pods-SampleTakeAway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTakeAway.release.xcconfig"; path = "Target Support Files/Pods-SampleTakeAway/Pods-SampleTakeAway.release.xcconfig"; sourceTree = "<group>"; };
 		58C544DD139E8E83BA8996F4 /* Pods-SampleTakeAwayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTakeAwayTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleTakeAwayTests/Pods-SampleTakeAwayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B1D74052340C75F00CBEBE8 /* DatabaseAndMoreFunctionalityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAndMoreFunctionalityTests.swift; sourceTree = "<group>"; };
 		6B819136233F508B002FFE0F /* SampleTakeAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTakeAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B819139233F508B002FFE0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B81913E233F508B002FFE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				6B81914E233F508F002FFE0F /* SampleTakeAwayTests.swift */,
+				6B1D74052340C75F00CBEBE8 /* DatabaseAndMoreFunctionalityTests.swift */,
 				6B819150233F508F002FFE0F /* Info.plist */,
 			);
 			path = SampleTakeAwayTests;
@@ -328,6 +331,7 @@
 				6B819146233F508F002FFE0F /* Sources */,
 				6B819147233F508F002FFE0F /* Frameworks */,
 				6B819148233F508F002FFE0F /* Resources */,
+				D232DEB54FD6EED19321B088 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +351,7 @@
 				6B819151233F508F002FFE0F /* Sources */,
 				6B819152233F508F002FFE0F /* Frameworks */,
 				6B819153233F508F002FFE0F /* Resources */,
+				3B180A61FE2AC1A961F514CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,6 +436,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B180A61FE2AC1A961F514CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayUITests/Pods-SampleTakeAwayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayUITests/Pods-SampleTakeAwayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayUITests/Pods-SampleTakeAwayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		41F1719FA1DE5E16387DDB0B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +536,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D232DEB54FD6EED19321B088 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayTests/Pods-SampleTakeAwayTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayTests/Pods-SampleTakeAwayTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleTakeAwayTests/Pods-SampleTakeAwayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -544,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B81914F233F508F002FFE0F /* SampleTakeAwayTests.swift in Sources */,
+				6B1D74062340C75F00CBEBE8 /* DatabaseAndMoreFunctionalityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06DA8C796DE8866FC0B95142 /* Pods-SampleTakeAway.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleTakeAway/Info.plist;
@@ -729,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B6E1CBDE7F48E05047030D6 /* Pods-SampleTakeAway.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleTakeAway/Info.plist;
@@ -759,7 +801,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SampleTakeAwayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleTakeAway.app/SampleTakeAway";
 			};
@@ -780,7 +822,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SampleTakeAwayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleTakeAway.app/SampleTakeAway";
 			};
@@ -800,7 +842,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SampleTakeAwayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleTakeAway;
 			};
@@ -820,7 +862,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SampleTakeAwayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleTakeAway;
 			};
