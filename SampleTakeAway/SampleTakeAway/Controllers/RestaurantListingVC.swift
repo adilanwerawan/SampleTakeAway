@@ -49,12 +49,15 @@ class RestaurantListingVC: UIViewController {
         })
         
         dropDown.anchorView = self.searchField
-        dropDown.dataSource = ["bestMatch", "newest", "ratingAverage","distance", "popularity", "averageProductPrice","deliveryCosts", "minCost", "default"]
+        
+        let sortValuesArray = ["bestMatch", "newest", "ratingAverage","distance", "popularity", "averageProductPrice","deliveryCosts", "minCost", "default"]
+        //Datasource array is different than actual sort values as it contains First capital letter
+        dropDown.dataSource = ["Best match", "Newest", "Rating average","Distance", "Popularity", "Average product price","Delivery costs", "Minimum cost", "Default"]
         
         // Action triggered on selection
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            self.customSortBy = item
+            self.customSortBy = sortValuesArray[index]
             self.restaurantsTbl?.reloadData()
         }
     }
