@@ -39,7 +39,7 @@ class AFWrapper: NSObject {
     //Get file base url from local
     public func getBaseURL() -> String{
         
-        let jsonFileURL = Bundle.main.url(forResource: "SampleiOS", withExtension: ".json", subdirectory: "Assets")
+        let jsonFileURL = Bundle.main.url(forResource: "SampleiOS", withExtension: ".json")
         if jsonFileURL != nil{
             
             return jsonFileURL?.absoluteString ?? ""
@@ -103,7 +103,7 @@ extension AFWrapper {
         
         //URLEncoding(destination: .methodDependent)
         //request
-        let baseURL = self.baseURL + info.endpoint
+        let baseURL = self.getBaseURL() + info.endpoint
         let headers = mergeWithCommonHeaders(info.headers)
         let paramEncoding = info.parameterEncoding
         alamoFireManager.request(baseURL,method:info.method,parameters:info.params,encoding:paramEncoding,headers:headers).responseJSON { (response) -> Void in
@@ -170,7 +170,7 @@ extension AFWrapper {
         }
         //URLEncoding(destination: .methodDependent)
         //request
-        alamoFireManager.request(self.baseURL + info.endpoint, method: info.method, parameters: info.params, encoding: info.parameterEncoding, headers: mergeWithCommonHeaders(info.headers)).responseJSON { (response) -> Void in
+        alamoFireManager.request(self.getBaseURL() + info.endpoint, method: info.method, parameters: info.params, encoding: info.parameterEncoding, headers: mergeWithCommonHeaders(info.headers)).responseJSON { (response) -> Void in
             
             //remove spinner
             if isSpinnerNeeded {

@@ -25,6 +25,10 @@
 		6B819185233F5894002FFE0F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B819183233F5894002FFE0F /* Restaurant.swift */; };
 		6B819186233F5894002FFE0F /* RestaurantSortingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B819184233F5894002FFE0F /* RestaurantSortingValue.swift */; };
 		6B819188233F592B002FFE0F /* RestaurantApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B819187233F592B002FFE0F /* RestaurantApiManager.swift */; };
+		6B81918A233F6A90002FFE0F /* CellNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B819189233F6A90002FFE0F /* CellNames.swift */; };
+		6BA55A54233F9B6A00BA60F7 /* Restaurants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA55A52233F9B6A00BA60F7 /* Restaurants.xcdatamodeld */; };
+		6BF03E38233FA2C0009F9BF8 /* RestaurantDBModelOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF03E37233FA2C0009F9BF8 /* RestaurantDBModelOperations.swift */; };
+		6BF03E3C233FC71E009F9BF8 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF03E3B233FC71E009F9BF8 /* GeneralExtensions.swift */; };
 		7FB2D85B89B97F94C53DCFD7 /* Pods_SampleTakeAway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386BAE1BBFF3DB3182246E45 /* Pods_SampleTakeAway.framework */; };
 		E0E6CB94D994BCE5F448CBD8 /* Pods_SampleTakeAwayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2BBE79DFCDA7E8B8DD3D6B /* Pods_SampleTakeAwayUITests.framework */; };
 		EB06441479F9D60BC1F6CB7B /* Pods_SampleTakeAwayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BCC84DC1D0B92ED6FC0673 /* Pods_SampleTakeAwayTests.framework */; };
@@ -77,6 +81,10 @@
 		6B819183233F5894002FFE0F /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		6B819184233F5894002FFE0F /* RestaurantSortingValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSortingValue.swift; sourceTree = "<group>"; };
 		6B819187233F592B002FFE0F /* RestaurantApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApiManager.swift; sourceTree = "<group>"; };
+		6B819189233F6A90002FFE0F /* CellNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellNames.swift; sourceTree = "<group>"; };
+		6BA55A53233F9B6A00BA60F7 /* Restaurants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Restaurants.xcdatamodel; sourceTree = "<group>"; };
+		6BF03E37233FA2C0009F9BF8 /* RestaurantDBModelOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDBModelOperations.swift; sourceTree = "<group>"; };
+		6BF03E3B233FC71E009F9BF8 /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		8FDC03D88DEC2ECD0B377B74 /* Pods-SampleTakeAwayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTakeAwayUITests.release.xcconfig"; path = "Target Support Files/Pods-SampleTakeAwayUITests/Pods-SampleTakeAwayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD2BBE79DFCDA7E8B8DD3D6B /* Pods_SampleTakeAwayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTakeAwayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BCC84DC1D0B92ED6FC0673 /* Pods_SampleTakeAwayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTakeAwayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +157,7 @@
 		6B819138233F508B002FFE0F /* SampleTakeAway */ = {
 			isa = PBXGroup;
 			children = (
+				6BA55A51233F9B2300BA60F7 /* Database */,
 				6B81916E233F50E3002FFE0F /* Custom */,
 				6B81916D233F50DA002FFE0F /* Networking */,
 				6B81916C233F50C8002FFE0F /* Utilities */,
@@ -158,6 +167,7 @@
 				6B819167233F5097002FFE0F /* Controllers */,
 				6B819168233F50AA002FFE0F /* Assets */,
 				6B819139233F508B002FFE0F /* AppDelegate.swift */,
+				6B819181233F5477002FFE0F /* SampleiOS.json */,
 				6B81913D233F508B002FFE0F /* Main.storyboard */,
 				6B819140233F508F002FFE0F /* Assets.xcassets */,
 				6B819142233F508F002FFE0F /* LaunchScreen.storyboard */,
@@ -195,7 +205,6 @@
 		6B819168233F50AA002FFE0F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				6B819181233F5477002FFE0F /* SampleiOS.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -228,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				6B819177233F5331002FFE0F /* Alert.swift */,
+				6B819189233F6A90002FFE0F /* CellNames.swift */,
+				6BF03E3B233FC71E009F9BF8 /* GeneralExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -266,6 +277,15 @@
 				6B819187233F592B002FFE0F /* RestaurantApiManager.swift */,
 			);
 			path = ApiManagers;
+			sourceTree = "<group>";
+		};
+		6BA55A51233F9B2300BA60F7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				6BA55A52233F9B6A00BA60F7 /* Restaurants.xcdatamodeld */,
+				6BF03E37233FA2C0009F9BF8 /* RestaurantDBModelOperations.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		8C1E29998B7D2F46DD2F3168 /* Frameworks */ = {
@@ -501,13 +521,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF03E38233FA2C0009F9BF8 /* RestaurantDBModelOperations.swift in Sources */,
 				6B819180233F5340002FFE0F /* AFParam.swift in Sources */,
 				6B819188233F592B002FFE0F /* RestaurantApiManager.swift in Sources */,
+				6B81918A233F6A90002FFE0F /* CellNames.swift in Sources */,
 				6B81917E233F5340002FFE0F /* AFManagerProtocol.swift in Sources */,
 				6B819174233F5272002FFE0F /* RestaurantCell.swift in Sources */,
 				6B819170233F5186002FFE0F /* RestaurantListingVC.swift in Sources */,
+				6BA55A54233F9B6A00BA60F7 /* Restaurants.xcdatamodeld in Sources */,
 				6B819178233F5332002FFE0F /* Alert.swift in Sources */,
 				6B819186233F5894002FFE0F /* RestaurantSortingValue.swift in Sources */,
+				6BF03E3C233FC71E009F9BF8 /* GeneralExtensions.swift in Sources */,
 				6B81913A233F508B002FFE0F /* AppDelegate.swift in Sources */,
 				6B81917D233F5340002FFE0F /* ApiEndPoints.swift in Sources */,
 				6B81917F233F5340002FFE0F /* AFWrapper.swift in Sources */,
@@ -842,6 +866,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6BA55A52233F9B6A00BA60F7 /* Restaurants.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6BA55A53233F9B6A00BA60F7 /* Restaurants.xcdatamodel */,
+			);
+			currentVersion = 6BA55A53233F9B6A00BA60F7 /* Restaurants.xcdatamodel */;
+			path = Restaurants.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6B81912E233F508B002FFE0F /* Project object */;
 }
